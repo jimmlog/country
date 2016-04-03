@@ -1,0 +1,39 @@
+{
+  "name": "jimmlog/yii2-country",
+  "description": "Yii2 country model",
+  "version": "1.0.0",
+  "keywords": [
+    "yii2 country model",
+    "yii2 country",
+    "yii2 extension",
+  ],
+  "type": "library",
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": "@dev"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/jimmlog/yii2-country/",
+  "authors": [
+    {
+      "name": "Jimm Logan",
+      "email": "jimmloga@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/jimmlog/yii2-country/issues?state=open",
+    "source": "https://github.com/jimmlog/yii2-country/"
+  },
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "jimmlog\\yii2\\": "src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
+}
