@@ -855,4 +855,16 @@ class CountryHelper
     {
         return array_key_exists($countryId, self::$isoList) ? self::$isoList[$countryId] : null;
     }
+
+    /**
+     * Get country id by ISO 3166-1 alpha-2 country code. Return id of "Unknown" country on code not exists
+     *
+     * @param string $iso ISO 3166-1 alpha-2 country code
+     * @return int
+     */
+    public static function getIdByCountryIsoCode($iso)
+    {
+
+        return (int) array_search(strtoupper($iso), self::$isoList);
+    }
 }
