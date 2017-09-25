@@ -4,6 +4,7 @@ namespace jimmlog\helper;
 
 /**
  * Country helper for static access country data like ISO 3166-1 alpha-2 code and english short countries name
+ * Some codes inherited from MaxMind. See @link https://dev.maxmind.com/geoip/legacy/codes/iso3166/
  *
  * Class CountryHelper
  * @package jimmlog\helper
@@ -264,6 +265,11 @@ class CountryHelper
     const YEMEN = 251;
     const ZAMBIA = 252;
     const ZIMBABWE = 253;
+    const ANONYMOUS_PROXY = 254;
+    const SATELLITE_PROVIDER = 255;
+    const OTHER_COUNTRY = 256;
+    const ASIA_PACIFIC_REGION = 257;
+    const EUROPE = 258;
 
     /**
      * Array of ISO 3166-1 alpha-2 countries code
@@ -524,6 +530,11 @@ class CountryHelper
         self::YEMEN => 'YE',
         self::ZAMBIA => 'ZM',
         self::ZIMBABWE => 'ZW',
+        self::ANONYMOUS_PROXY => 'A1',
+        self::SATELLITE_PROVIDER => 'A2',
+        self::OTHER_COUNTRY => 'O1',
+        self::ASIA_PACIFIC_REGION => 'AP',
+        self::EUROPE => 'EU',
     ];
 
     /**
@@ -785,6 +796,11 @@ class CountryHelper
         self::YEMEN => 'Yemen',
         self::ZAMBIA => 'Zambia',
         self::ZIMBABWE => 'Zimbabwe',
+        self::ANONYMOUS_PROXY => 'Anonymous Proxy',
+        self::SATELLITE_PROVIDER => 'Satellite Provider',
+        self::OTHER_COUNTRY => 'Other Country',
+        self::ASIA_PACIFIC_REGION => 'Asia/Pacific Region',
+        self::EUROPE => 'Europe',
     ];
 
     /**
@@ -1118,6 +1134,11 @@ class CountryHelper
         self::YEMEN => ['id' => self::YEMEN, 'iso' => 'YE', 'name' => 'Yemen',],
         self::ZAMBIA => ['id' => self::ZAMBIA, 'iso' => 'ZM', 'name' => 'Zambia',],
         self::ZIMBABWE => ['id' => self::ZIMBABWE, 'iso' => 'ZW', 'name' => 'Zimbabwe',],
+        self::ANONYMOUS_PROXY => ['id' => self::ANONYMOUS_PROXY, 'iso' => 'A1', 'name' => 'Anonymous Proxy',],
+        self::SATELLITE_PROVIDER => ['id' => self::SATELLITE_PROVIDER, 'iso' => 'A2', 'name' => 'Satellite Provider',],
+        self::OTHER_COUNTRY => ['id' => self::OTHER_COUNTRY, 'iso' => 'O1', 'name' => 'Other Country',],
+        self::ASIA_PACIFIC_REGION => ['id' => self::ASIA_PACIFIC_REGION, 'iso' => 'AP', 'name' => 'Asia/Pacific Region',],
+        self::EUROPE => ['id' => self::EUROPE, 'iso' => 'EU', 'name' => 'Europe',],
     ];
 
     /**
